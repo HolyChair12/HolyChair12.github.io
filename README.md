@@ -23,3 +23,4 @@ contents:
 
 > [!WARNING]
 > CONTAINS GLUNGUS POST 😱
+ples c the [mein pag](index.html) it the mein pag k thx
