@@ -11,7 +11,7 @@ contents:
 | [glungus post 👍](README.md#glungus-post--4) |
 | [glungus post 👍](README.md#glungus-post--5) |
 
-# ples do c the lisense k thx
+# ples do c the [lisense](LICENSE) k thx
 # glungus post 👍
 ## glungus post 👍
 ### glungus post 👍
