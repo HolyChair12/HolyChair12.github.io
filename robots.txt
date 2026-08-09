@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /*?
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /.gitignore
+Disallow: /.gitattributes
+Disallow: /*.gitkeep
+Disallow: /assets/
 
 Sitemap: https://holychair12.github.io/sitemap.xml
