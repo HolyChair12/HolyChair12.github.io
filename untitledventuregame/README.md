@@ -22,6 +22,11 @@
 
 ## Currently don't know what will come out of this
 
+## Controls:
+* <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd>
+* <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>
+* Mobile buttons
+
 <details><summary><b><h2>Features: click to expand</h2></b></summary>
 
 * [ ] Horror elements
