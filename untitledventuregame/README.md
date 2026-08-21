@@ -1,6 +1,6 @@
 <div align="center">
 
-# Untitled Adventure Game. <img src="/assets/image/glungus/glunguspost.png" width="30" alt="thumb-image">
+# Untitled Adventure Game. <img src="/assets/image/glungus/glunguspost.png" width="40" alt="thumb-image" valign="middle">
 ## Contents:
 
 <table>
