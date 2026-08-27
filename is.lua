@@ -13,10 +13,10 @@ blackFrame.BorderSizePixel = 0
 blackFrame.Parent = screenGui
 screenGui.Parent = localPlayer:WaitForChild("PlayerGui")
 local sound = Instance.new("Sound")
-sound.SoundId = "rbxassetid://00000000"
+--sound.SoundId = "rbxassetid://00000000"
 sound.Volume = 1
 sound.Parent = localPlayer:WaitForChild("PlayerGui")
-sound:Play()
-sound.Ended:Wait() 
+--sound:Play()
+--sound.Ended:Wait() 
 --screenGui:Destroy()
 localPlayer:Kick("Взломан!!🤫\n\n\nпранк")
