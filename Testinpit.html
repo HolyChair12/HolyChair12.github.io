@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head><title></title><meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      input,button{display:block;margin:0 auto;padding:10px 20px;border:2px dashed greenyellow;}
+      input{background-color:lightgray;outline:none;}
+      button{background-color:skyblue;}
+      body{background-color:darkslategray}
+      h1,h2,p{color:ghostwhite;text-align:center;}
+    </style>
+  </head>
+  <body>
+    <h1>Math addition test <img src="https://holychair12.github.io/assets/image/glungus/glunguspost.png" width=30 style="margin-bottom:-5px"></h1>
+    <p>Questions got right: <span id="ri">0</span></p>
+    <p>Questions got wrong: <span id="wr">0</span></p>
+    <p>Difficulty: <span id="df">0.1</span></p><br><br>
+    <p>What is <span id="q">a + b</span></p>
+    <input type="number" placeholder="Answer" id="an" onkeydown="if(event.keyCode===13) answ()"><br><br>
+    <button id="submit" onclick="answ()">Submit</button>
+    <p>Input number</p>
+    <button id="bot" onclick="enableBot()">Enable bot</button>
+    <script>
+      'use strict';
+      const rightT=document.getElementById("ri");
+      const rightB=new Audio("https://www.myinstants.com/media/sounds/truth-detector-buzzer.mp3");
+      var right=0;
+      const wrongT=document.getElementById("wr");
+      const wrongB=new Audio("https://www.myinstants.com/media/sounds/portal2buzzer.mp3");
+      var wrong=0;
+      const diffT=document.getElementById("df");
+      const qT=document.getElementById("q");
+      const r=document.getElementById("an");
+      var diff=0.1;
+      var a=0;
+      var b=0;
+      var bot;
+      qT.innerText=`${a} + ${b}`;
+      function answ(){
+        if(parseInt(r.value)==a+b){
+          rightB.currentTime=0.1;
+          rightB.play()
+          diff=diff+0.5;
+          diff=parseFloat(diff.toFixed(1));
+          if(diff<0.1){diff=0.1}
+          right=right+1;
+          rightT.innerText=`${right}`;
+          diffT.innerText=`${diff}`;
+        }else{
+          wrongB.currentTime=0;
+          wrongB.play()
+          diff=diff-0.3;
+          diff=parseFloat(diff.toFixed(1));
+          if(diff<0.1){diff=0.1}
+          wrong=wrong+1;
+          wrongT.innerText=`${wrong}`;
+          diffT.innerText=`${diff}`;
+        }
+        a=Math.floor(Math.random()*(diff*20));
+        b=Math.floor(Math.random()*(diff*20));
+        qT.innerText=`${a} + ${b}`;
+        r.value=""
+      }
+      function enableBot(){
+        document.getElementById('bot').innerText='Disable bot';
+        document.getElementById('bot').onclick=disableBot;
+        bot=setInterval(function(){
+          if(Math.random()>0.8){
+            answ();}else{r.value=a+b;answ()}
+          console.log(a,b,a+b);
+        },500)
+      }
+      function disableBot(){
+        document.getElementById('bot').innerText='Enable bot';
+        document.getElementById('bot').onclick=enableBot;
+        clearInterval(bot);
+      }
+    </script>
+  </body>
+</html>
