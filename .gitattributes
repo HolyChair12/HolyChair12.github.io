@@ -3,3 +3,5 @@ empty.c linguist-vendored
 *.js linguist-language=JavaScript
 *.js linguist-generated=false
 *.xhtml linguist-language=XML
+*.xml linguist-detectable=true
+*.xhtml linguist-detectable=true
