@@ -1,2 +1,7 @@
 empty.c linguist-vendored
 /glungus.net/1/glungus.py linguist-vendored
+*.js linguist-language=JavaScript
+*.js linguist-generated=false
+*.xhtml linguist-language=XML
+*.xml linguist-detectable=true
+*.xhtml linguist-detectable=true
