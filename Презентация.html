@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Презентация: Официально-деловой стиль</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .presentation-container {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide {
+            display: none;
+            padding: 40px;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        /* Стиль титульного слайда */
+        .slide-title-page {
+            justify-content: space-between;
+            padding: 50px 40px;
+        }
+
+        .school-header {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .main-title {
+            font-size: 36px;
+            color: #1a365d;
+            margin: 20px 0;
+            font-weight: 700;
+            border-bottom: 3px solid #3182ce;
+            padding-bottom: 10px;
+        }
+
+        .authors-info {
+            margin: 20px 0;
+            text-align: right;
+            width: 100%;
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer-city {
+            font-size: 14px;
+            color: #718096;
+            margin-top: auto;
+        }
+
+        /* Стили информационных слайдов */
+        .slide h2 {
+            font-size: 28px;
+            color: #2b6cb0;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .slide ul {
+            text-align: left;
+            width: 100%;
+            padding-left: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .slide p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+            width: 100%;
+        }
+
+        /* Элементы управления */
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #edf2f7;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #3182ce;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #2b6cb0;
+        }
+
+        .btn:disabled {
+            background-color: #cbd5e0;
+            cursor: not-allowed;
+        }
+
+        .slide-counter {
+            font-size: 14px;
+            color: #4a5568;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container">
+        
+        <!-- СЛАЙД 1: ТИТУЛЬНЫЙ -->
+        <div class="slide slide-title-page active">
+            <div class="school-header">Козловская МБОУ СОШ №1</div>
+            <div class="main-title">Официально-деловой стиль</div>
+            <div class="authors-info">
+                <p><strong>Автор:</strong> Рожков Николай</p>
+                <!--<p><strong>Руководитель:</strong> Козлова И.В.</p>-->
+            </div>
+            <div class="footer-city">пгт.Козлово 2026</div>
+        </div>
+
+        <!-- СЛАЙД 2 -->
+        <div class="slide">
+            <h2>Что такое официально-деловой стиль?</h2>
+            <p>Официально-деловой стиль — это функциональный стиль речи, который используется в сфере официальных отношений, правовых норм и государственного управления.</p>
+        </div>
+
+        <!-- СЛАЙД 3 -->
+        <div class="slide">
+            <h2>Основные черты стиля</h2>
+            <ul>
+                <li>Точность и однозначность формулировок</li>
+                <li>Строгая повторяемость и стандартизация языковых средств</li>
+                <li>Отсутствие эмоционально-окрашенной лексики</li>
+                <li>Официальный, строго деловой тон</li>
+            </ul>
+        </div>
+
+        <!-- СЛАЙД 4 -->
+        <div class="slide">
+            <h2>Сфера применения</h2>
+            <p>Этот стиль обслуживает официальные и юридические отношения между гражданами и государством, организациями, а также между государствами.</p>
+        </div>
+
+        <!-- СЛАЙД 5 -->
+        <div class="slide">
+            <h2>Жанры делового стиля</h2>
+            <ul>
+                <li>Законы, указы, уставы</li>
+                <li>Приказы, протоколы, акты</li>
+                <li>Деловые письма, резюме, заявления</li>
+                <li>Доверенности, расписки, автобиографии</li>
+            </ul>
+        </div>
+
+        <!-- СЛАЙД 6 -->
+        <div class="slide">
+            <h2>Языковые особенности: Лексика</h2>
+            <p>Использование специальной юридической и дипломатической терминологии (истец, протокол, регламент) и устойчивых канцеляризмов (в целях, в соответствии с, на основании).</p>
+        </div>
+
+        <!-- СЛАЙД 7 -->
+        <div class="slide">
+            <h2>Языковые особенности: Морфология</h2>
+            <p>Частое употребление отглагольных существительных (выполнение, подписание, решение), а также инфинитивов в повелительном значении (обязать, доложить).</p>
+        </div>
+
+        <!-- СЛАЙД 8 -->
+        <div class="slide">
+            <h2>Языковые особенности: Синтаксис</h2>
+            <p>Сложные развернутые предложения, большое количество причастных и деепричастных оборотов, прямой порядок слов.</p>
+        </div>
+
+        <!-- СЛАЙД 9 -->
+        <div class="slide">
+            <h2>Подстили</h2>
+            <ul>
+                <li>Законодательный (юридические документы, конституция)</li>
+                <li>Административно-канцелярский (ведение дел в учреждениях)</li>
+                <li>Дипломатический (международные договоры, ноты)</li>
+            </ul>
+        </div>
+
+        <!-- СЛАЙД 10: ЗАКЛЮЧЕНИЕ -->
+        <div class="slide">
+            <h2>Заключение</h2>
+            <p>Официально-деловой стиль играет важнейшую роль в обществе, обеспечивая точность, порядок и ясность в документообороте и правовом поле нашей страны.</p>
+        </div>
+
+        <!-- ПАНЕЛЬ УПРАВЛЕНИЯ -->
+        <div class="controls">
+            <button class="btn" id="prevBtn" onclick="changeSlide(-1)" disabled>Назад</button>
+            <div class="slide-counter" id="slideCounter">Слайд 1 из 10</div>
+            <button class="btn" id="nextBtn" onclick="changeSlide(1)">Вперед</button>
+        </div>
+
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slideCounter');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide += direction;
+            slides[currentSlide].classList.add('active');
+
+            // Обновляем состояние кнопок
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+
+            // Обновляем счетчик
+            slideCounter.textContent = `Слайд ${currentSlide + 1} из ${slides.length}`;
+        }
+    </script>
+</body>
+</html>
