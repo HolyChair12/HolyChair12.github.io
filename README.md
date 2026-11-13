@@ -1,3 +1,4 @@
+## gosh i dont even have time to update this school is awful
 contents:
 ---
 
